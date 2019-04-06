@@ -1,0 +1,31 @@
+header {
+  display: flex;
+  height: 30px;
+  padding-bottom: 20px;
+  justify-content: flex-end;
+}
+
+#toplinks {
+  list-style: none;
+  display: flex;
+  font-size: $s-size;
+  width:200px;
+}
+  
+#toplinksReg {
+  color: #ffdd38;
+  padding-top: 3px;
+}
+  
+#toplinksLog {
+  color: #ce2131;
+  padding-top: 3px;
+}
+  
+.cherrySm {
+  width: 20px;
+  margin-left: 10px;
+  padding-left: 20px;
+  padding-right: 5px;
+  vertical-align: top;
+}
