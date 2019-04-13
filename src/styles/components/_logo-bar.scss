@@ -1,5 +1,8 @@
 .logo-bar {
     display: flex;
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 0 $m-size;
 }
 
 .logo {

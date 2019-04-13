@@ -1,48 +1,123 @@
-.search {
-    border-top: #ffdd38 solid 2px;
-    border-bottom: #ffdd38 solid 2px;
-  }
-  
-  .searchBox input {
-    width: 150px;
-    height: 20px;
-  }
-  
-  .searchCity {
-    vertical-align: middle;
-    margin-left: 0;
-    display: inline-block;
-    margin: 10px;
-  }
+.iconsm {
+  color: #ffdd38;
+  height: 10px;
+}
 
-  .content {
-    font-family: 'Lato', sans-serif;
-    margin: 0;
-  }
-  
-  .content h1 {
-    text-align: center;
-  }
+.iconexcl {
+  color: #ce2131;
+  font-weight: 300;
+}
 
-  h1 {
-    color: #ce2131;
-    font-size: 1.7em;
+.content {
+  display: flex;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 $m-size;
+}
+
+.content h1 {
+  color: $main-title;
+  font-size: $l-size;
+}
+
+.content h2 {
+  color: $sub-title;
+}
+
+#feature-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: 240px;
+    max-width: 100%;
+    
   }
+}
+
+.intro {
+  display: flex;
+  color: white;
+  font-size: $s-size;
+  flex-direction: column;
+  align-items: center;
   
-  h2 {
-    color: #ffdd38;
-  }
-  
+
   p {
-    font-weight: 200;
+    width: 40%;
+    text-align: center;
+    margin: 0 30px;
+    padding-bottom: 4rem;
+    line-height: 2rem;
   }
-  
-  .iconsm {
-    color: #ffdd38;
-    font-weight: 300;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+
+}
+
+.search {
+  border-top: #ffdd38 solid 2px;
+  border-bottom: #ffdd38 solid 2px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 70%;
+  margin: auto;
+}
+
+.searchBox input {
+  width: 150px;
+  height: 20px;
+}
+
+#searchNearby {
+  display: flex;
+  flex: 1;
+  align-items: center;
+
+  h2 {
+    flex: 2;
   }
-  
-  .iconexcl {
-    color: #ce2131;
-    font-weight: 300;
+
+  .berry-icon {
+    flex: 1;
+    justify-content: flex-end;
   }
+}
+
+#searchCity {
+  display: flex;
+  flex: 1;
+  align-items: center;
+
+  h2 {
+    flex: 2;
+  }
+
+  input {
+    flex: 1;
+  }
+
+
+}
+
+.berry-icon {
+  flex: 1;
+}
+
+.searchBox {
+  flex: 3;
+  width: 150px;
+  height: 20px;
+}

@@ -1,8 +1,10 @@
 header {
   display: flex;
-  height: 30px;
-  padding-bottom: 20px;
+  height: 50px;
   justify-content: flex-end;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 $m-size;
 }
 
 #toplinks {
