@@ -84,21 +84,19 @@
 #searchNearby {
   display: flex;
   flex: 1;
-  align-items: center;
 
   h2 {
-    flex: 2;
+    flex: 1;
   }
 
   .berry-icon {
     flex: 1;
-    justify-content: flex-end;
+    margin-left: 50px;
   }
 }
 
 #searchCity {
   display: flex;
-  flex: 1;
   align-items: center;
 
   h2 {
@@ -106,14 +104,13 @@
   }
 
   input {
+    flex: 2;
+  }
+
+  .berry-icon {
     flex: 1;
   }
 
-
-}
-
-.berry-icon {
-  flex: 1;
 }
 
 .searchBox {
