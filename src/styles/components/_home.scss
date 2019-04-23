@@ -1,13 +1,75 @@
-.left {
-    flex: 1;
-}
-
-.right {
-    flex: 2;
-}
-
-#feature-image {
+.content {
     display: flex;
-    width: 160px;
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 0 $m-size;
+  
+  h2 {
+    color: $sub-title;
+    font-size: $m-size;
+    align-self: center
+  }
+}
+
+.left {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+  
+  .right {
+    display: flex;
+    flex: 2;
+  
+  }
+
+  #feature-image {
+    display: flex;
+    align-items: center;
+  
+    img {
+      height: 240px;
+      max-width: 100%;
+      margin: 1rem;
+    }
+  }
+
+  #dashboard-panel {
+    display: flex;
+    align-items: center;
+  }
+
+  #dashboard {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      flex: 4;
+
+      &:after {
+        content: $icon-berry-medium;
+      }
+    }
+
+  }
+
+  #search-city {
+    display: flex;
+    justify-content: flex-end;
+
+    h2 {
+      flex: 1;
+      margin: auto;
 
     }
+
+    .icon-berry-medium {
+      flex: 1;
+      margin: auto;
+
+    }
+
+    #search-box {
+      flex: 1;
+    }
+  }

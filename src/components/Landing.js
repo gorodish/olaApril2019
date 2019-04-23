@@ -9,34 +9,27 @@ class Landing extends React.Component {
           <div className="intro">
             <h1>Language Exchange Network</h1>
             <p>Connect with <span className="iconsm">Ola</span>
-            <span className="iconexcl">!</span>
-             members to spend time practicing your language skills
+              <span className="iconexcl">!</span>
+              members to spend time practicing your language skills
               <br />
               Browse profiles of those members nearby or search a city you'll be visiting
             </p>
           </div>
           <div className="search">
-            <div id="searchNearby">
+            <div id="search-nearby">
               <h2>Search Nearby</h2>
               <div className="berry-icon"><img src="/assets/dent-button-cherry-apple-active.png" alt="cherry" /></div>
             </div>
-            <div id="searchCity">
+            <div id="search-city">
               <h2>Search City</h2>
-              <form className="searchBox">
-                <input type="text" required placeholder="Seville" />
+              <form id="search-box">
+                  <input type="text" required placeholder="Seville" />
               </form>
               <div className="berry-icon"><img src="/assets/dent-button-cherry-apple-active.png" alt="cherry" /></div>
-          </div>
+            </div>
           </div>
         </div>
       </div>
-
-
-
-
-
-
-
     );
   }
 }

@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import Home from '../components/Home';
 import Landing from '../components/Landing';
 import LogoBar from '../components/LogoBar';
+import NotFoundPage from '../components/NotFoundPage';
 
 const AppRouter = () => (
     <BrowserRouter>
@@ -12,8 +13,9 @@ const AppRouter = () => (
             <Header />
             <LogoBar />
             <Switch>
-                <Route path="/" component={Landing} exact={true} />
-                <Route path="/home" component={Home} />
+              <Route exact path="/" component={Landing} />
+              <Route path="/home" component={Home} />
+              <Route component={NotFoundPage} />
             </Switch>
             <Footer />
         </div>

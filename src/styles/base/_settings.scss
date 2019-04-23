@@ -4,6 +4,37 @@ $brand-background: #154073;
 $main-title: #CE2131;
 $sub-title: #FFDD38;
 
+// Images
+
+$icon-berry: url("/assets/dent-button-cherry-apple-active.png");
+
+.icon-berry {
+
+  &-small {
+    background-image: $icon-berry;
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    height: 30px;
+    width: 30px;
+  }
+
+  &-medium {
+    background-image: $icon-berry;
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+    height: 40px;
+    width: 40px;
+  }
+
+  &-large {
+    background-image: $icon-berry;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    height: 55px;
+    width: 55px;
+  }
+}
+
 //Spacing
 $s-size: 1.2rem;
 $m-size: 1.6rem;
