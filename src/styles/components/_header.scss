@@ -5,29 +5,30 @@ header {
   max-width: 100rem;
   margin: 0 auto;
   padding: 0 $m-size;
+  font-size: $s-size;
 }
 
-#toplinks {
-  list-style: none;
+.toplinks {
   display: flex;
-  font-size: $s-size;
-  width:200px;
 }
-  
-#toplinksReg {
-  color: #ffdd38;
-  padding-top: 3px;
+
+.toplinks-login {
+  display: flex;
+  align-items: center;
+  color: $sub-title;
 }
-  
-#toplinksLog {
-  color: #ce2131;
-  padding-top: 3px;
+
+.toplinks-register {
+  display: flex;
+  align-items: center;
+  color: $main-title;
+  margin-left: $l-size;
 }
-  
-.cherrySm {
-  width: 20px;
-  margin-left: 10px;
-  padding-left: 20px;
-  padding-right: 5px;
-  vertical-align: top;
+
+.login {
+  margin-left: 0.5rem;
+}
+
+.register {
+  margin-left: 0.5rem;
 }

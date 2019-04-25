@@ -13,26 +13,36 @@ $icon-berry: url("/assets/dent-button-cherry-apple-active.png");
   &-small {
     background-image: $icon-berry;
     background-repeat: no-repeat;
-    background-size: 25px 25px;
-    height: 30px;
-    width: 30px;
+    background-size: 20px 20px;
+    height: 20px;
+    width: 20px;
   }
 
   &-medium {
     background-image: $icon-berry;
     background-repeat: no-repeat;
     background-size: 35px 35px;
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
   }
 
   &-large {
     background-image: $icon-berry;
     background-repeat: no-repeat;
     background-size: 50px 50px;
-    height: 55px;
-    width: 55px;
+    height: 50px;
+    width: 50px;
   }
+}
+
+.iconsm {
+  color: #ffdd38;
+  height: 10px;
+}
+
+.iconexcl {
+  color: #ce2131;
+  font-weight: 300;
 }
 
 //Spacing

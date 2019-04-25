@@ -1,14 +1,4 @@
-.iconsm {
-  color: #ffdd38;
-  height: 10px;
-}
-
-.iconexcl {
-  color: #ce2131;
-  font-weight: 300;
-}
-
-.content {
+.landing--content {
   display: flex;
   max-width: 100rem;
   margin: 0 auto;
@@ -18,25 +8,20 @@
   color: $main-title;
   font-size: $l-size;
   }
-
-  h2 {
-  color: $sub-title;
-  }
 }
 
-#feature-image {
+.landing--feature-image {
   display: flex;
-  justify-content: center;
   align-items: center;
 
   img {
     height: 240px;
     max-width: 100%;
-    
+    margin: 1rem;
   }
 }
 
-.intro {
+.landing--intro {
   display: flex;
   color: white;
   font-size: $s-size;
@@ -45,7 +30,7 @@
   
 
   p {
-    width: 40%;
+    width: 50%;
     text-align: center;
     margin: 0 30px;
     padding-bottom: 4rem;
@@ -53,68 +38,56 @@
   }
 }
 
-.left {
+.landing--left {
   display: flex;
-  justify-content: center;
-  flex: 1;
-}
-
-.right {
-  display: flex;
-  flex-direction: column;
   flex: 2;
-
+  justify-content: center;
 }
 
-.search {
-  border-top: #ffdd38 solid 2px;
-  border-bottom: #ffdd38 solid 2px;
+.landing--middle {
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  width: 70%;
-  margin: auto;
+  flex: 3;
+
 }
 
-.searchBox input {
-  width: 150px;
-  height: 20px;
-}
-
-#search-nearby {
+.landing--right {
   display: flex;
+  flex-direction: column;
   flex: 1;
 
-  h2 {
-    flex: 1;
-  }
-
-  .berry-icon {
-    flex: 1;
-    margin-left: 50px;
-  }
 }
 
-#search-city {
+.landing--search {
+  border-top: $sub-title solid 2px;
+  border-bottom: $sub-title solid 2px;
+  color: $sub-title;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.landing--search-nearby {
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
 
-  h2 {
-    flex: 2;
+  .icon-berry-medium {
+    margin-left: 5rem;
   }
-
-  input {
-    flex: 2;
-  }
-
-  .berry-icon {
-    flex: 1;
-  }
-
 }
 
-#search-box {
-  flex: 3;
+.landing--search-city {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  .landing--search-box {
+    margin: auto;
+  }
+}
+
+.landing--search-box {
   width: 150px;
   height: 20px;
 }

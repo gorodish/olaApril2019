@@ -2,20 +2,20 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Header = () => (
-    <header>
-        <ul id="toplinks">
-            <li>
-              <NavLink to="/home" activeClassName="is-active" exact={true}>
-                  <img className="cherrySm" src="/assets/dent-button-cherry-apple-active.png"alt="cherry" />
-              </NavLink>
-            </li>
-            <li id="toplinksLog">Login</li>
-            <li>
-                <img className="cherrySm" src="/assets/dent-button-cherry-apple-active.png"alt="cherry" />
-            </li>
-            <li id="toplinksReg">Register</li>
-        </ul>
-    </header>
+  <header>
+    <div className="toplinks">
+      <div className="toplinks-login">
+        <NavLink to="/home" activeClassName="is-active" exact={true}>
+        <div className="icon-berry-small">
+        </div></NavLink>
+        <div className="login">Login</div>
+      </div>
+      <div className="toplinks-register">
+        <div className="icon-berry-small"></div>
+        <div className="register">Register</div>
+      </div>
+    </div>
+  </header>
 );
 
 export default Header;

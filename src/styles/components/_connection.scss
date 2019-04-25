@@ -1,0 +1,25 @@
+.connection ul {
+  display: flex;
+  width: 200px;
+  justify-content: space-around;
+  background: lighten($brand-background, 10%);
+  align-items: center;
+}
+
+li {
+  display: flex;
+  width: 200px;
+  margin-left: 10px;
+}
+
+img {
+  margin-left: -40px;
+}
+
+.one {
+  color: $sub-title;
+}
+
+.two {
+  color: $main-title;
+}
