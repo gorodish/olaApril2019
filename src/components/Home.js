@@ -42,8 +42,8 @@ class Home extends React.Component {
                   <div className="icon-berry-small"></div>
                 </div>
                 <form className="home--search-box">
-                <input type="text" required placeholder="Seville" />
-              </form>
+                  <input type="text" required placeholder="Seville" />
+                </form>
                 <div className="home--advanced-search">
                   <h2>Advanced Search</h2>
                   <div className="icon-berry-small"></div>

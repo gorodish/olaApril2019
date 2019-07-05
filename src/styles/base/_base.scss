@@ -15,3 +15,18 @@ button {
 button:disabled {
     cursor: default;
 }
+
+.is-active {
+  color: white;
+}
+
+//Layout
+.content {
+  display: flex;
+  width: 50rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+  max-width: 100rem;
+  padding: 0 $m-size;
+  color: white;
+}

@@ -12,21 +12,33 @@ const config = {
 firebase.initializeApp(config);
 
 const database = firebase.database();
+const emailAuthProvider = new firebase.auth.EmailAuthProvider();
 
-database.ref('expenses')
-  .once('value')
-  .then((snapshot) => {
-    const expenses = [];
+export { firebase, emailAuthProvider, database as default };
 
-    snapshot.forEach((childSnapshot) => {
-      expenses.push({
-        id: childSnapshot.key,
-        ...childSnapshot.val()
-      });
-    });
+// Child removed
+// database.ref('expenses').on('child_removed', (snapshot) => {
+//   console.log(snapshot.key, snapshot.val());
+// });
 
-    console.log(expenses);
-  });
+// child changed
+// database.ref('expenses').on('child_changed', (snapshot) => {
+//   console.log(snapshot.key, snapshot.val());
+// });
+
+// database.ref('expenses')
+//   .on('value', (snapshot) => {
+//     const expenses = [];
+
+//     snapshot.forEach((childSnapshot) => {
+//       expenses.push({
+//         id: childSnapshot.key,
+//         ...childSnapshot.val()
+//       });
+//     });
+
+//     console.log(expenses);
+//   });
 
 // database.ref('expenses').push({
 //   description: 'Car parking',
